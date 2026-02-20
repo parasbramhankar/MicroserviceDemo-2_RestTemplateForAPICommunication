@@ -13,5 +13,4 @@ public class GreetController {
         return "Good Morning,";
     }
 
-
 }
