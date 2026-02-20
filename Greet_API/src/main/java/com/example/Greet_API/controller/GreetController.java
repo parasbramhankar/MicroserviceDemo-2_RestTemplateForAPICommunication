@@ -10,14 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class GreetController {
 
-    @Autowired
-    Environment environment;
+
 
     @GetMapping("/greet")
     public String greet(){
 
-        String port=environment.getProperty("server.port");
-        System.out.println("port----->"+port);
+
         return "Good Morning,";
     }
 
